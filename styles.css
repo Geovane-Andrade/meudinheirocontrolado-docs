@@ -1,0 +1,149 @@
+:root {
+  --primary: #fdba12;
+  --primary-dark: #d97706;
+  --background: #f8fafc;
+  --surface: #ffffff;
+  --text: #1f2937;
+  --text-secondary: #6b7280;
+  --border: #e5e7eb;
+  --shadow: rgba(15, 23, 42, 0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  background: var(--background);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 24px;
+}
+
+header {
+  text-align: center;
+  padding: 50px 20px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 2px 10px var(--shadow);
+}
+
+header h1 {
+  color: var(--primary-dark);
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+}
+
+.card {
+  background: var(--surface);
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 8px 20px var(--shadow);
+  margin-top: 30px;
+}
+
+h2 {
+  color: var(--primary-dark);
+  margin: 32px 0 14px;
+}
+
+h3 {
+  margin-top: 24px;
+  color: var(--text);
+}
+
+p {
+  margin: 12px 0;
+}
+
+ul {
+  margin: 12px 0 20px 24px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+a {
+  color: var(--primary-dark);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 35px;
+  flex-wrap: wrap;
+}
+
+.button {
+  display: inline-block;
+  padding: 14px 24px;
+  border-radius: 10px;
+  background: var(--primary);
+  color: #fff;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.button:hover {
+  background: var(--primary-dark);
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--text-secondary);
+  border-top: 1px solid var(--border);
+  margin-top: 50px;
+  font-size: 0.95rem;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 35px 0;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .card {
+    padding: 24px;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
+    text-align: center;
+  }
+}
